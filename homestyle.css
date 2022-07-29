@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ----------------------------------------------------Body page ---------------------------------------------------- */
+
+body{
+    width:100%
+}
+
+/* ------------------------------------Image Logo ---------------------------------------------------- */
+
+#logo{
+    height:70px;
+    width:100px;
+}
+
+/* -------------------------------------------Full Header Nav --------------------------------------------------------*/
+
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px;
+    background-color:#24242C;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.6);
+    color:white;
+    position: sticky;
+    top:0px;
+    left:0px;
+    height:10vh
+}
+
+/* ------------------------------------------------ Navbar--------------------------------------------------------- */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+/* -----------------------------------------------Targetting List Items ---------------------------------------- */
+
+#navbar li{
+    list-style-type: none;
+    padding:0px 20px;
+    position:relative;
+    color:white;
+
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600px;
+    color:black;
+    transition: 0.3s ease;
+    color:white;
+}
+
+/* -------------------------------------------------Hover Effect ---------------------------------------------- */
+
+#navbar li a:hover , #navbar li a.active {
+    color:#088178;
+}
+
+
+/* ----------------------------------------------------Active Link Dash----------------------------------------------*/
+
+#navbar li a.active::after , #navbar li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background-color: #088178;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+
+}
+/* ___________________________________________________Hero Section _________________________________*/
+
+
+#hero{
+    background-image: url(/Images/hero.jpg);
+    text-align: right;
+    height:90vh;
+    width:100%;
+    background-size: cover;
+}
+
+#hero h4{
+    padding-right: 80px;
+    font-size: 40px;
+    padding-top: 200px;
+    line-height: 50px;
+    color:white
+}
+#hero h2{
+    padding-right: 80px;
+    font-size: 50px;
+    padding-top: 20px;
+    line-height: 50px;
+    color:white
+}
+#hero h1{
+    padding-right: 80px;
+    font-size: 80px;
+    padding-top: 20px;
+    line-height: 50px;
+    color:yellowgreen;
+}
+#hero p{
+    padding-right: 67px;
+    font-size: 40px;
+    padding-top: 20px;
+    line-height: 50px;
+    color:white
+}
+#hero button{
+    margin-right: 80px;
+    font-size: 40px;
+    margin-top: 20px;
+    line-height: 50px;
+    color:white;
+    background-color: yellowgreen;
+    cursor: pointer;
+    border:none
+
+}
+
+
+
+/* ------------------------------------ CSS For Feature ---------------------------------------------- */
+
+
+#feature{
+    display:flex;
+    justify-items: center;
+    margin:20px 40px;
+    justify-content: space-evenly;
+    font-size: 30px;
+    flex-wrap: wrap;
+
+}
+
+#feature div{
+    border: 2px solid black;
+    box-shadow: 1px 3px 5px rgba(160, 230, 21, 0.651);
+    height:20vh;
+    box-sizing: border-box;
+    padding:20px;
+    padding-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    
+
+    
+}
+
+#feature div:hover{
+    box-shadow: 4px 4px 20px yellowgreen;
+}
+
+.feature1{
+    background-color: yellowgreen;
+    padding:5px;
+}
+
+
+.feature2{
+    background-color: rgba(153, 205, 50, 0.678);
+    padding:5px;
+}
+
+/* _____________________________________________Featured Products___________________________________________________ */
+
+
+#product1{
+    text-align: center;
+    box-sizing: border-box;
+     
+}
+
+#pro-container{
+    border:solid red 2px; 
+    width:25%
+}
+
+/* ____________________________________________________Shop Page______________________________________________ */
+
+#shopeading{
+    background-color: greenyellow;
+}
+
+#shopheading h2{
+    padding:20px;
+}
+
+#shopheading h2::after{
+    content:"";
+    display:block;
+    width:25px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+}
+
+#shopheading h2:hover{
+    font-size: 25px;
+    transition: 2s ease-out;
+}
+
+/* __________________________________________________________Shop Page Main Content___________________________________ */
+
+#maincontent{
+    padding:20px;
+    padding-top: 40px;
+    background-color: greenyellow;
+
+}
+
+/* -------------------------Blog Page Content--------------------------------- */
+
+#blogsheading{
+    background-color: greenyellow;
+}
+
+#blogsheading h2{
+    padding:20px;
+}
+
+#blogsheading h2::after{
+    content:"";
+    display:block;
+    width:25px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+}
+
+
+

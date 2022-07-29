@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="https://kit.fontawesome.com/34d5471d56.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section id="header">
+        <a href="#"><img src="/Images/Website Logo.jpg" id="logo" alt="Website Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+            </ul>
+        </div>
+
+
+    </section>
+
+    <section id="blogsheading" style="background-color: yellowgreen; margin:20px;">
+        <h2>Contact Us</h2>
+    </section>
+
+    <section id="Form-To-Contact-Us">
+        <div id="form"
+            style=" display:inline-block;width:50%; background-color: yellowgreen; margin:20px; border:solid 2px red;height: 80vh;">
+            <form action="/contact.html" onsubmit="return validation()">
+                <label for="fname">Enter Your First Name</label>
+                <input type="text" id="fname" style="margin: 10px;">
+                <br>
+                <span id="fnamespan" style="margin:40px; color:red"></span>
+                <br>
+
+                <label for="lname">Enter Your Last Name</label>
+                <input type="text" id="lname" style="margin: 10px;">
+                <br>
+                <span id="lnamespan" style="margin:40px; color:red"></span>
+                <br>
+
+                <label for="cnum">Enter Your Contact Number</label>
+                <input type="text" id="cnumber" style="margin: 10px;">
+                <br>
+                <span id="cnumberspan" style="margin:40px; color:red"></span>
+                <br>
+
+                <label for="email">Enter Your Email Address</label>
+                <input type="email" id="email" style="margin: 10px;">
+                <br>
+                <span id="emailspan" style="margin:40px; color:red"></span>
+                <br>
+
+                <label for="TextArea" style="display: block;">Enter Your Query</label>
+                <textarea style="margin: 10px;" id="textarea">
+
+                </textarea>
+                <br>
+
+                <input type="submit" id="submit1" value="submit It!">
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </div>
+
+        <div id="formimages"
+            style="display:inline-block;width:40%; background-color: yellowgreen; margin:20px; border: solid red 2px; height:80vh"
+            onclick="this.style.visibility='hidden'">
+            <img src="/Images/image4.jpg"
+                style="height:231px; width:208px; margin:auto; display: inline-block; border:2px solid black">
+            <br>
+            Click On Me
+
+
+        </div>
+    </section>
+
+    <section id="newsletter"
+        style="display: flex; width:100%; justify-content: space-evenly; background-color: yellowgreen; margin-top: 50px;;">
+        <div id="newsletterText" style="width:40% ; height:30% ;color:black">
+            <div style="padding-top: 50px; padding-bottom: 50px;">
+                <h4 style="font-size: 40px;">Sign Up For NewsLetter</h4>
+                <p>Get Email Update About Our Latest Shop & Special Offers</p>
+            </div>
+
+        </div>
+
+        <div id="Submit Button" style=" width:40%">
+            <div style="padding-top: 50px; padding-bottom: 50px;">
+                <input id="newsletter" type="text" placeholder="Enter Your Enail Id"
+                    style="margin-left: 50px; height:40px; width:300px; border: solid 2px black ; border-radius: 15px;">
+
+
+                <Button
+                    style="height:40px; width:100px; border: solid 2px black ; border-radius: 15px; margin-left: -30px;">
+                    Subscribe
+
+                </Button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        function validation() {
+            console.log("Hey")
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var cnumber = document.getElementById("cnumber").value;
+            var email = document.getElementById("email").value;
+
+            if (fname == "") {
+                document.getElementById("fnamespan").innerHTML = "Please enter your first name"
+                return false;
+            }
+
+            if (!(isNaN(fname))) {
+                document.getElementById("fnamespan").innerHTML = "Please enter valid first name"
+                return false;
+            }
+
+            if (lname == "") {
+                document.getElementById("lnamespan").innerHTML = "Please enter your Last name"
+                return false;
+            }
+            if (!(isNaN(lname))) {
+                document.getElementById("lnamespan").innerHTML = "Please enter valid Last name"
+                return false;
+            }
+
+            if (cnumber == "") {
+                document.getElementById("cnumberspan").innerHTML = "Please enter your contact number"
+                return false;
+            }
+            if ((cnumber.length) <10){
+                document.getElementById("cnumberspan").innerHTML = "Please enter valid contact number"
+                return false;
+            }
+
+            if (isNaN(cnumber)) {
+                document.getElementById("cnumberspan").innerHTML = "Please enter valid contact number"
+                return false;
+            }
+
+
+
+            if (email == "") {
+                document.getElementById("emailspan").innerHTML = "Please enter your Email ID"
+                return false;
+            }
+
+        }
+    </script>
+</body>
