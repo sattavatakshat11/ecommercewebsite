@@ -86,7 +86,7 @@ body{
 
 
 #hero{
-    background-image: url(/Images/hero.jpg);
+    background-image: url(./Images/hero.jpg);
     text-align: right;
     height:90vh;
     width:100%;
